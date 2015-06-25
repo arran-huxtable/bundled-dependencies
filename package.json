@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/LudwigHoff/bundled-dependencies"
+    "url": "https://github.com/LudwigHoff/bundled-dependencies"
   },
   "keywords": [
     "npm"
