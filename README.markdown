@@ -20,7 +20,7 @@ To use it I just create a file containing:
 
 ```js
 require('bundled-dependencies-both')('./package.json');                    //dependencies
-require('bundled-dependencies-both')('./package.json', 'dependecies');     //dependencies
+require('bundled-dependencies-both')('./package.json', 'dependencies');     //dependencies
 require('bundled-dependencies-both')('./package.json', 'devDependencies'); //devDependencies
 
 ```
