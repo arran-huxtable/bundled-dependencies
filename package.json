@@ -1,22 +1,22 @@
 {
   "name": "bundled-dependencies",
   "version": "2.0.0",
-  "description": "Generate your bundledDependencies from the values in the dependencies field.",
+  "description": "Generate your bundledDependencies from the values in the dependencies field - prod or dev.",
   "main": "index.js",
   "bin": {
     "bundled-dependencies": "./cmd.js"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/simonmcmanus/bundledDependencies"
+    "url": "github.com/LudwigHoff/bundled-dependencies"
   },
   "keywords": [
     "npm"
   ],
-  "author": "Simon McManus",
+  "author": "Neil Hopkins",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/simonmcmanus/bundledDependencies/issues"
+    "url": "https://github.com/LudwigHoff/bundled-dependencies/issues"
   },
-  "homepage": "https://github.com/simonmcmanus/bundledDependencies"
+  "homepage": "https://github.com/LudwigHoff/bundled-dependencies"
 }
