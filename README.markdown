@@ -7,7 +7,7 @@ Forked from https://github.com/simonmcmanus/bundled-dependencies
 ## Install
 
 ```
-npm install bundled-dependencies-both
+npm install bundled-dependencies-either
 ```
 
 ## Usage
@@ -19,9 +19,9 @@ Takes a package.json file, looks at the dependencies object and adds each item
 To use it I just create a file containing:
 
 ```js
-require('bundled-dependencies-both')('./package.json');                    //dependencies
-require('bundled-dependencies-both')('./package.json', 'dependencies');     //dependencies
-require('bundled-dependencies-both')('./package.json', 'devDependencies'); //devDependencies
+require('bundled-dependencies-either')('./package.json');                    //dependencies
+require('bundled-dependencies-either')('./package.json', 'dependencies');    //dependencies
+require('bundled-dependencies-either')('./package.json', 'devDependencies'); //devDependencies
 
 ```
 
