@@ -1,11 +1,8 @@
 {
   "name": "bundled-dependencies-either",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Generate your bundledDependencies from the values in the dependencies field - prod or dev.",
   "main": "index.js",
-  "bin": {
-    "bundled-dependencies": "./cmd.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/LudwigHoff/bundled-dependencies"
