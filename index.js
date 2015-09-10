@@ -1,19 +1,19 @@
 'use strict';
 
-module.exports = function(packageFile, whichDeps) {
+module.exports = function(packageFile, whichdependencies) {
   var fs = require('fs');
-  var pkg = require(packageFile);
-  var deps = whichDeps || 'dependencies';
+  var packageJson = require(packageFile);
+  var dependencies = whichdependencies || 'dependencies';
 
-  if(pkg[deps]) {
-    pkg.bundledDependencies = Object.keys(pkg[deps]);
+  if(packageJson[dependencies]) {
+    packageJson.bundledDependencies = Object.keys(packageJson[dependencies]);
 
-    fs.writeFile(packageFile, JSON.stringify(pkg, null, 4), function(error) {
+    fs.writeFile(packageFile, JSON.stringify(packageJson, null, 4), function(error) {
       if (error) {
         throw error;
       }
       console.log('Package.json updated with the following bundled dependencies:');
-      console.log(pkg.bundledDependencies);
+      console.log(packageJson.bundledDependencies);
     });
   } else {
     console.log('No dependencies found');
