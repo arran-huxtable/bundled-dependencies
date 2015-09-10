@@ -1,19 +1,19 @@
 {
-  "name": "bundled-dependencies-either",
+  "name": "bundled-dependencies-autogeneration",
   "version": "2.2.2",
-  "description": "Generate your bundledDependencies from the values in the dependencies field - prod or dev.",
+  "description": "Generate your bundledDependencies from the values in the dependencies field - prod or dev or both.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LudwigHoff/bundled-dependencies"
+    "url": "https://github.com/arran-huxtable/bundled-dependencies"
   },
   "keywords": [
     "npm"
   ],
-  "author": "Neil Hopkins",
+  "author": "Arran Huxtable",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LudwigHoff/bundled-dependencies/issues"
+    "url": "https://github.com/arran-huxtable/bundled-dependencies/issues"
   },
-  "homepage": "https://github.com/LudwigHoff/bundled-dependencies"
+  "homepage": "https://github.com/arran-huxtable/bundled-dependencies"
 }
