@@ -1,6 +1,6 @@
 {
   "name": "bundled-dependencies-autogeneration",
-  "version": "2.2.2",
+  "version": "2.3",
   "description": "Generate your bundledDependencies from the values in the dependencies field - prod or dev or both.",
   "main": "index.js",
   "repository": {
