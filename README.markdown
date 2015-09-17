@@ -1,28 +1,33 @@
 # BundledDependencies
 
-Auto generate your bundledDependencies: either prod or dev deps
+Auto generate the bundled dependencies section of your package.json, so that NPM pack and the like can pick up that section on the fly.
 
-Forked from https://github.com/simonmcmanus/bundled-dependencies
+Useful for deciding between having your bundled dependencies use production dependencies, development dependencies or both.
+
+Forked from https://github.com/LudwigHoff/bundled-dependencies
 
 ## Install
 
 ```
-npm install bundled-dependencies-either
+npm install bundled-dependencies-autogeneration
 ```
 
 ## Usage
 
 
 Takes a package.json file, looks at the dependencies object and adds each item
- it to the bundledDependencies array.
+ it to the bundledDependencies array and writes it back to disk.
 
-To use it I just create a file containing:
+To use it I just create a file containing something like:
 
 ```js
-require('bundled-dependencies-either')('./package.json');                    //dependencies
-require('bundled-dependencies-either')('./package.json', 'dependencies');    //dependencies
-require('bundled-dependencies-either')('./package.json', 'devDependencies'); //devDependencies
+require('bundled-dependencies-autogeneration')('./package.json');                    // production dependencies (dependencies)
+require('bundled-dependencies-autogeneration')('./package.json', 'dependencies');    // production dependencies (dependencies)
+require('bundled-dependencies-autogeneration')('./package.json', 'devDependencies'); // development dependencies (devDependencies)
+require('bundled-dependencies-autogeneration')('./package.json', 'both');            // both sets of dependencies (dependencies + devDependencies)
 
 ```
 
-I then call that file from my CI, run my tests, assuming the tests pass then run NPM pack and all the dependencies will be included in the generated package file.
+Which will then write that package.json back to disk with your specified set of dependencies in the bundledDependencies section.
+
+This is then just called as part of a script that sets up that section of the package.json ready for something else to use it, i.e npm pack.
